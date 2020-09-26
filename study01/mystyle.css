@@ -1,0 +1,40 @@
+h1, h2, h3, h4{
+    color: navy;
+}
+
+h1{
+    font-size: 55px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main {
+    font-size: 25px;
+    color: navy;
+}
+
+header{
+    background-color: rgba(0, 0, 128, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#showcase {
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px rgba(10, 10, 255, 0.1);
+}
+
+#newsletter {
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px rgba(255, 10, 10, 0.1);
+}
+
+#box-languages {
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px rgba(10, 255, 10, 0.1);
+}

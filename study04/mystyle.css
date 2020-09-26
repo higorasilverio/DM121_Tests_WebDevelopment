@@ -1,0 +1,182 @@
+/* Reset file */
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Setting the entire file body */
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    display: grid;
+
+    /* General styles */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+
+    /* Grid container */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Main content which have 3 sections */
+#main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+/* Setting all the sections by its id */
+#showcase, #newsletter, #box-languages {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Setting all sections and header with flex */
+.flex-container {
+    display: flex;
+}
+
+/* Working on header */
+header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border-bottom: 3px solid #99f;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header h1 {
+    flex: 1;
+}
+
+header li {
+    display: inline;
+    padding-right: 10px;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+.highlight {
+    color: gold;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+/* Working on showcase section */
+#showcase {
+ min-width: 40vh;
+ background: url('../resources/img/showcase.jpg') no-repeat -19.6875em -49.5em;
+ color: white;
+ text-align: center;
+ flex-direction: column;
+ text-shadow: 1px 1px 10px black;
+}
+
+/* Working on newsletter section */
+#newsletter {
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+}
+#newsletter h3 {
+    flex: 1;
+}
+
+#newsletter h3, #newsletter form {
+    margin: 0.9em;
+}
+
+#newsletter input[type=email] {
+    padding: 0.25em;
+    height: 2em;
+    width: 15em;
+}
+
+
+/* Working on box-languages section */
+.box {
+    text-align: center;
+    padding: 0.6em;
+}
+
+.box img {
+    width: 50%;
+}
+
+/* Working on footer */
+footer {
+    display: flex;
+    font-size: 0.75em;
+    align-items: center;
+}
+
+
+/* Estaclish a class for buttons*/
+.button {
+    height: 2em;
+    background-color: limegreen;
+    color: white;
+    padding: 0px 2em;
+    border-radius: 0.3em;
+}
+
+@media screen and (max-width: 48em) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    header h1{
+        margin: 0;
+    }
+    header li {
+        display: block;
+        padding: 0.625em;
+    }
+    #showcase {
+        background: #f2f2f2;
+        color: black;
+        min-height: 10vh;
+    }
+    #newsletter h3, #newsletter form {
+        margin: 0;
+    }
+
+    .box {
+        padding: 0.1875em;
+    }
+    .box h4 {
+        display: none;
+    }
+    .box img{
+        max-width: 30%;
+    }
+    footer {
+        padding: 0.32em;
+    }
+}
+
+@media screen and (max-width: 20em) {
+    #newsletter input[type=email],
+    #newletter button {
+        width: 100%;
+    }
+}

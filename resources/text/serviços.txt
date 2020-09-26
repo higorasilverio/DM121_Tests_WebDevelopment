@@ -1,0 +1,19 @@
+seção serviços
+<h3>Design
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p>Preço: A partir de R$2.000,00
+               
+<h3>Suporte
+<p>Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem.
+<p>Preço: R$200,00 por mês
+
+<h3>Hospedagem
+<p>Orci varius natoque penatibus et magnis dis parturient montes.
+<p>Preço: R$35,00 por mês
+
+seção cotação
+<h3>Cotação
+
+
+footer
+<p>Inatel DM121, Copyright &copy; 2020

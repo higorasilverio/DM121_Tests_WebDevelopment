@@ -1,0 +1,141 @@
+/* Reset file */
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Setting the entire file body */
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    display: grid;
+
+    /* General styles */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+
+    /* Grid container */
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+/* Main content which have 3 sections */
+#main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 100px auto;
+}
+
+/* Setting all the sections by its id */
+#showcase, #newsletter, #box-languages {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Setting all sections and header with flex */
+.flex-container {
+    display: flex;
+}
+
+/* Working on header */
+header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border-bottom: 3px solid #99f;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header h1 {
+    flex: 1;
+}
+
+header li {
+    display: inline;
+    padding-right: 10px;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+.highlight {
+    color: gold;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+/* Working on showcase section */
+#showcase {
+ min-width: 400px;
+ background: url('../resources/img/showcase.jpg') no-repeat -315px -792px;
+ color: white;
+ text-align: center;
+ flex-direction: column;
+ text-shadow: 1px 1px 10px black;
+}
+
+/* Working on newsletter section */
+#newsletter {
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+}
+#newsletter h3 {
+    flex: 1;
+}
+
+#newsletter h3, #newsletter form {
+    margin: 15px;
+}
+
+#newsletter input[type=email] {
+    padding: 4px;
+    height: 38px;
+    width: 250px;
+}
+
+
+/* Working on box-languages section */
+.box {
+    text-align: center;
+    padding: 10px;
+}
+
+.box img {
+    width: 100px;
+}
+
+/* Working on footer */
+footer {
+    display: flex;
+    font-size: 0.75em;
+    align-items: center;
+}
+
+
+/* Estaclish a class for buttons*/
+.button {
+    height: 38px;
+    background-color: limegreen;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+
